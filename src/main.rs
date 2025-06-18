@@ -32,7 +32,9 @@ impl Display for Line {
         write!(
             f,
             "{} {}{}{}",
-            self.precedence.custom_color(CustomColor::new(110, 106, 241)).bold(),
+            self.precedence
+                .custom_color(CustomColor::new(110, 106, 241))
+                .bold(),
             self.key.custom_color(CustomColor::new(42, 195, 222)),
             self.sep.custom_color(CustomColor::new(160, 160, 160)),
             self.value.custom_color(CustomColor::new(241, 163, 111)),
